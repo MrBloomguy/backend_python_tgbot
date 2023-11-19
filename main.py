@@ -73,7 +73,7 @@ async def sell_threshold(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
     await update.message.reply_html(
         f"Set your sell threshold",
-        reply_markup =InlineKeyboardMarkup([[InlineKeyboardButton("Sell Threshold", callback_data='1')]])
+        reply_markup=ForceReply(selective=True),
     )
     return  SELL_THRESHOLD
 
@@ -88,7 +88,7 @@ async def buy_clip_size(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
     await update.message.reply_html(
         f"Set your buy clip size",
-        reply_markup =InlineKeyboardMarkup([[InlineKeyboardButton("Buy Clip Size", callback_data='1')]])
+        reply_markup=ForceReply(selective=True),
     )
     return  BUY_CLIP_SIZE
 
@@ -104,7 +104,7 @@ async def sell_clip_size(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
     await update.message.reply_html(
         f"Set your sell clip size",
-        reply_markup =InlineKeyboardMarkup([[InlineKeyboardButton("Sell Clip Size", callback_data='1')]])
+        reply_markup=ForceReply(selective=True),
     )
     return  SELL_CLIP_SIZE
 
