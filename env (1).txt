@@ -1,0 +1,8 @@
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Access the variables
+TELEGRAM_BOT_TOKEN = os.getenv("5993144020:AAGd7ME6k9p4SZ6OsmjrbCnHDz_G9tlVyPE")
